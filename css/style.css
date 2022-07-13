@@ -1,5 +1,6 @@
 :root{
     --bg-accent: #00439C;
+    --bg-accent-alt: #CD3D0F;
     --bg-dark: #363636;
     --bg-darker: #000;
     --bg-light: #fff;
@@ -8,6 +9,10 @@ img{
     display: block;
     max-width: 100%;
 }
+/* Layout */
+.conteiner_ps{
+    max-width: 1100px;
+}
 /* Components */
 .banner_top{
     height: 3rem;
@@ -15,4 +20,29 @@ img{
 }
 .btn_dark{
     background-color: var(--bg-dark);
+}
+.btn_red{
+    background-color: var(--bg-accent-alt);
+}
+.pt_4-5{
+    padding-top: 2.5rem;
+}
+.py_4-5{
+    padding: 2.5rem 0;
+}
+.w_35{
+    width: 35%;
+}
+.rounded_5{
+    border-radius: 1rem;
+}
+/* Jumbo */
+.section.jumbo > .jumbo_banner{
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url(../img/jumbo-bg.png);
+}
+.jumbo_banner > .container {
+    height: 580px;
 }
