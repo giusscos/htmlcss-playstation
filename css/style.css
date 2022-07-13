@@ -1,0 +1,18 @@
+:root{
+    --bg-accent: #00439C;
+    --bg-dark: #363636;
+    --bg-darker: #000;
+    --bg-light: #fff;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+/* Components */
+.banner_top{
+    height: 3rem;
+    background-color: black;
+}
+.btn_dark{
+    background-color: var(--bg-dark);
+}
