@@ -1,6 +1,7 @@
 :root{
     --bg-accent: #00439C;
     --bg-accent-alt: #CD3D0F;
+    --bg-accent-alt-1: #161C3B;
     --bg-accent-light: #2D64E6;
     --bg-dark: #363636;
     --bg-dark-alt: #1f1f1f;
@@ -21,6 +22,9 @@ body{
     max-width: 1100px;
 }
 /* Components */
+.bg_accent_alt-1{
+    background-color: var(--bg-accent-alt-1);
+}
 .bg_dark_alt{
     background-color: var(--bg-dark-alt);
 }
@@ -38,6 +42,9 @@ body{
 }
 .btn_accent_light{
     background-color: var(--bg-accent-light);
+}
+.btn_light{
+    background-color: var(--bg-light);
 }
 .btn_light_alt{
     background-color: var(--bg-light-alt);
