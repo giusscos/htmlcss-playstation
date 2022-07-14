@@ -4,8 +4,10 @@
     --bg-accent-light: #2D64E6;
     --bg-dark: #363636;
     --bg-dark-alt: #1f1f1f;
+    --bg-dark-alt-1: #BEBCBB;
     --bg-darker: #000;
     --bg-light: #fff;
+    --bg-light-alt: #D9DADC;
 }
 img{
     display: block;
@@ -22,6 +24,9 @@ body{
 .bg_dark_alt{
     background-color: var(--bg-dark-alt);
 }
+.bg_dark_alt-1{
+    background-color: var(--bg-dark-alt-1);
+}
 .banner_top{
     height: 3rem;
     background-color: var(--bg-darker);
@@ -34,6 +39,9 @@ body{
 }
 .btn_accent_light{
     background-color: var(--bg-accent-light);
+}
+.btn_light_alt{
+    background-color: var(--bg-light-alt);
 }
 .border_accent_light{
     border-bottom: 1px solid var(--bg-accent-light);
@@ -91,5 +99,13 @@ body{
 }
 .section.news .jumbo_banner > .container {
     height: 700px;
+}
+.section.ps_plus > .jumbo_banner {
+    background-size: contain;
+    background-position: right;
+    background-image: url(../img/ps-plus-april-monthly-games-featured-image-block.png);
+}
+.section.ps_plus .jumbo_banner > .container {
+    height: 400px;
 }
 /* Le dimensioni fisse sono a fini di debug <3 */
