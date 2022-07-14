@@ -27,8 +27,7 @@ body{
 .bg_dark_alt-1{
     background-color: var(--bg-dark-alt-1);
 }
-.banner_top{
-    height: 3rem;
+.bg_darker{
     background-color: var(--bg-darker);
 }
 .btn_dark{
@@ -99,13 +98,5 @@ body{
 }
 .section.news .jumbo_banner > .container {
     height: 700px;
-}
-.section.ps_plus > .jumbo_banner {
-    background-size: contain;
-    background-position: right;
-    background-image: url(../img/ps-plus-april-monthly-games-featured-image-block.png);
-}
-.section.ps_plus .jumbo_banner > .container {
-    height: 400px;
 }
 /* Le dimensioni fisse sono a fini di debug <3 */
