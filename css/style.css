@@ -96,20 +96,23 @@ body{
     font-size: 24px;
 }
 /* Jumbo */ 
-.jumbo_banner{
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
+.section .jumbo_banner > img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
 }
-.section.jumbo > .jumbo_banner {
-    background-image: url(../img/jumbo-bg.png);
+.section.jumbo .thumb_list .col.border_trasparent{
+    border: 3px solid transparent;
 }
-.section.jumbo .jumbo_banner > .container {
-    height: 580px;
+.section.jumbo .thumb_list .col.active{
+    border: 3px solid var(--bg-accent-light);   
 }
-.section.news > .jumbo_banner {
-    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
-}
-.section.news .jumbo_banner > .container {
-    height: 700px;
+@media screen and (min-width: 992px){
+    .section.jumbo .jumbo_banner > img{
+       aspect-ratio: auto;
+    }
+    .section.news .jumbo_banner > img{
+        aspect-ratio: 16/9;
+     }
 }
