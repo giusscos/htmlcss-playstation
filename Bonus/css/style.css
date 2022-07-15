@@ -46,10 +46,18 @@ body{
     background-color: var(--bg-darker);
 }
 .btn_dark{
+    border: 2px solid transparent;
     background-color: var(--bg-dark);
 }
+.nav-item > .btn_dark:hover{
+    background-color: var(--bg-darker);   
+}
 .btn_red{
+    border: 2px solid transparent;
     background-color: var(--bg-accent-alt);
+}
+.btn_red:hover{
+    border: 2px solid currentColor;
 }
 .btn_accent_light{
     background-color: var(--bg-accent-light);
@@ -112,8 +120,10 @@ body{
 .banner_top{
     z-index: 100;
 }
-.main-header > nav{
+.main-header{
     z-index: 100;
+}
+.main-header > nav{
     position: relative;
 }
 .main-header .nav-item.dropdown{
@@ -135,17 +145,7 @@ body{
     color: var(--bg-accent-light);
 }
 .main-header .dropdown-menu{
-    z-index: 99;    
-    display: flex;
-    opacity: 0;
-    left: 0;
-    right: 0;
-    top: -500px;
     transition: 600ms cubic-bezier(.77,.05,.4,1);
-}
-.main-header .dropdown-menu.show{
-    opacity: 1;
-    top: 50px;
 }
 .list_item_nav{
     display: flex;
@@ -168,26 +168,63 @@ body{
     background-color: var(--bg-dark-alt-1);
 }
 /* Jumbo */ 
-.section .jumbo_banner > img{
-    width: 100%;
+.section .carousel-item > img{
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: center;
 }
-.section.jumbo .thumb_list .col.border_trasparent{
-    border: 3px solid transparent;
+.section .carousel-indicators{
+    position: relative;
+    flex-wrap: wrap;
 }
-.section.jumbo .thumb_list .col.active{
-    border: 3px solid var(--bg-accent-light);   
+.section .carousel-indicators > button{
+    background-color: transparent;
+    width: calc((100% / 2) - 0.5rem);
+    height: calc(100% / 3);
+}
+.section .carousel-indicators button > img{
+    border: 0px solid transparent;
+    transition: 300ms ease-in-out;
+}
+.section .carousel-indicators button.active > img{
+    border: 3px solid var(--bg-accent-light);
+}
+.section .carousel-indicators button > img{
+    padding: 0.25rem;
+    aspect-ratio: 16/9;
+    border-radius: 1rem;
 }
 @media screen and (min-width: 769px){
+    .section .carousel-item > img{
+        aspect-ratio: 16/9;
+    }
     .social_container{
         max-width: 550px;
     }
+    .section .carousel-indicators > button{
+        width: calc((100% / 3) - 0.5rem);
+        height: calc(100% / 2);
+    }
 }
 @media screen and (min-width: 992px){
-    .section.jumbo .jumbo_banner > img{
-       aspect-ratio: auto;
+    .main-header .dropdown-menu{
+        display: flex;
+    }
+    .main-header .dropdown-menu{
+        z-index: 99;    
+        left: 0;
+        right: 0;
+        top: -500px;
+    }
+    .main-header .dropdown-menu.show{
+        top: 50px;
+    }
+    .section.jumbo .carousel-item > img{
+       aspect-ratio: 21/9;
+    }
+    .section .carousel-indicators > button{
+        width: calc((100% / 6) - 0.5rem);
+        height: calc(100% / 1);
     }
     .section.news .jumbo_banner > img{
         aspect-ratio: 16/9;
