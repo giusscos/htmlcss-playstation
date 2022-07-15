@@ -30,6 +30,9 @@ body{
     min-width: 400px;
 }
 /* Components */
+.cursor_pointer{
+    cursor: pointer;
+}
 .bg_accent{
     background-color: var(--bg-accent);
 }
@@ -61,6 +64,9 @@ body{
 }
 .btn_accent_light{
     background-color: var(--bg-accent-light);
+}
+.btn_accent_light:hover{
+    background-color: var(--bg-accent);
 }
 .btn_light{
     background-color: var(--bg-light);
@@ -193,6 +199,12 @@ body{
     padding: 0.25rem;
     aspect-ratio: 16/9;
     border-radius: 1rem;
+}
+.section .jumbo_banner > img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
 }
 @media screen and (min-width: 769px){
     .section .carousel-item > img{
