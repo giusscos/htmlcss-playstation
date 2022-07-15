@@ -65,11 +65,19 @@ body{
 .btn_accent_light{
     background-color: var(--bg-accent-light);
 }
+.btn_light_alt:hover{
+    color: currentColor;
+    background-color: var(--bg-dark);
+}
 .btn_accent_light:hover{
     background-color: var(--bg-accent);
 }
 .btn_light{
     background-color: var(--bg-light);
+}
+.btn_light:hover{
+    color: currentColor;
+    background-color: var(--bg-accent-alt);
 }
 .btn_light_alt{
     background-color: var(--bg-light-alt);
