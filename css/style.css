@@ -29,11 +29,6 @@ ul.footer_list{
 body{
     min-width: 400px;
 }
-@media screen and (min-width: 769px){
-    .social_container{
-        max-width: 550px;
-    }
-}
 /* Components */
 .bg_accent{
     background-color: var(--bg-accent);
@@ -95,6 +90,22 @@ body{
 .brand_copy{
     font-size: 24px;
 }
+/* Nav */
+.main-header .nav-link.dropdown-toggle{
+    display: flex;
+    align-items: center;
+}
+.main-header .dropdown-toggle::after{
+    border: none;
+    content: '\f078';
+    display: inline-block;
+    font: var(--fa-font-solid);
+    transition: 200ms ease-in-out;
+}
+.main-header .dropdown-toggle.show::after{
+    transform: rotate(180deg);
+    color: var(--bg-accent-light);
+}
 /* Jumbo */ 
 .section .jumbo_banner > img{
     width: 100%;
@@ -107,6 +118,11 @@ body{
 }
 .section.jumbo .thumb_list .col.active{
     border: 3px solid var(--bg-accent-light);   
+}
+@media screen and (min-width: 769px){
+    .social_container{
+        max-width: 550px;
+    }
 }
 @media screen and (min-width: 992px){
     .section.jumbo .jumbo_banner > img{
